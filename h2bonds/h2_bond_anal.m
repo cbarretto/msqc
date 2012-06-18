@@ -10,11 +10,11 @@ doFit = 1;
 plotResults = 0;
 useStart = 0;
 pstart =  [-0.5 3 7 0 0 0];
-params = 24:28; % bond lengths to include
+params = 1:22; % bond lengths to include
 envs = 1:100; % environments to include in fit
 
 if (reload)
-   load('h2bonds/h2BondDat1.mat');
+   load('h2bonds/h2BondDat.mat');
 end
 
 if (doFit || handFit)
